@@ -20,7 +20,7 @@
                         <li><strong>Origine :</strong> <%= coffee.origin %></li>
                         <li><strong>Prix au kilo :</strong> <%= coffee.price_per_kilo %> €</li>
                         <li><strong>Caractéristique principale :</strong> <%= coffee.main_characteristic %></li>
-                        <li><strong>Disponibilité :</strong> <%= coffee.available %></li>
+                        <li><strong>Disponibilité :</strong> <%= coffee.available ? '✅' : '❌' %></li>
                     </ul>
                 </div>
                 <button class="container__add-basket">

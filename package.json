@@ -1,18 +1,15 @@
 {
   "name": "s09-ocoffee-el-ia",
   "version": "1.0.0",
-  "description": "O'coffee - Plateforme d'information sur le café",
+  "description": "Arôm'Coffee - Plateforme de commerce de café",
   "main": "index.js",
   "type": "module",
-  "directories": {
-    "doc": "docs"
-  },
   "scripts": {
     "dev": "node --watch index.js"
   },
   "keywords": [
     "café",
-    "O'coffee"
+    "Arôm'Coffee"
   ],
   "author": "Elia Berthier",
   "license": "ISC",

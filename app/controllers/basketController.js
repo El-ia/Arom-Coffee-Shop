@@ -10,23 +10,36 @@ export async function basketPage(req, res) {
 
 export async function addProductToBasket(req, res){
 
-  const coffeeId = parseInt(req.params.id);
+  try{
+    
+    const coffeeId = parseInt(req.params.id);
 
-  if (! req.session.coffeeIds) {
-    req.session.coffeeIds = [];
-  }
-  if (! req.session.coffeeIds.includes(coffeeId)) { 
-    req.session.coffeeIds.push(coffeeId); 
-  }
+    if (! req.session.coffeeIds) {
+      req.session.coffeeIds = [];
+    }
+    if (! req.session.coffeeIds.includes(coffeeId)) { 
+      req.session.coffeeIds.push(coffeeId); 
+    }
 
-  res.redirect("/basket");
+    res.redirect("/basket");
+
+  } catch (error) {
+    console.error(error);
+    res.status(500).render("500");
+  }
 }
 
 export async function removeProductFromBasket(req, res){
 
-  const coffeeIdToRemove = parseInt(req.params.id);
-  req.session.coffeeIds = req.session.coffeeIds.filter(coffeeId => coffeeId !== coffeeIdToRemove);
+  try{
 
-  res.redirect("/basket");
+    const coffeeIdToRemove = parseInt(req.params.id);
+    req.session.coffeeIds = req.session.coffeeIds.filter(coffeeId => coffeeId !== coffeeIdToRemove);
 
+    res.redirect("/basket");
+    
+  } catch (error) {
+    console.error(error);
+    res.status(500).render("500");
+  }
 }
