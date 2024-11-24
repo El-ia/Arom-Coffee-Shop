@@ -1,0 +1,39 @@
+<%- include('./partials/header') %>
+
+<title>Arôm'Coffee - Produits</title>
+
+<%- include('./partials/font-and-style') %>
+
+<%- include('./partials/nav') %>
+
+    <main class="container">
+        <section class="container__header">
+            <div class="container__product">
+                <img src="../images/<%= coffee.reference %>.png" alt="Café <%= coffee.name %>" class="container__image">
+                <h1 class="container__title"><%= coffee.name %></h1>
+                <p class="container__description">
+                    <%= coffee.description %>
+                </p>
+                <div class="container__details">
+                    <h2 class="container__subtitle">Détails du produit</h2>
+                    <ul class="container__info-list">
+                        <li><strong>Origine :</strong> <%= coffee.origin %></li>
+                        <li><strong>Prix au kilo :</strong> <%= coffee.price_per_kilo %> €</li>
+                        <li><strong>Caractéristique principale :</strong> <%= coffee.main_characteristic %></li>
+                        <li><strong>Disponibilité :</strong> <%= coffee.available %></li>
+                    </ul>
+                </div>
+                <button class="container__add-basket">
+                    <a href="/basket/add/<%= coffee.id %>"><img src="../images/cart-plus.svg" alt="icone basket" class="container__icone-basket"></a>
+                </button>
+                
+            </div>
+            <div class="container__cta">
+                <p class="container__cta-text">Voulez-vous découvir plus de café exceptionnel ? Découvrez notre catalogue pour plus de produits de qualité.</p>
+                <a href="/catalogue" class="container__cta-link" aria-label="Retour au catalogue">Retour au Catalogue</a>
+            </div>
+        </section>
+    </main>
+
+
+    <%- include('./partials/footer') %>

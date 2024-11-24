@@ -1,0 +1,30 @@
+{
+  "name": "s09-ocoffee-el-ia",
+  "version": "1.0.0",
+  "description": "O'coffee - Plateforme d'information sur le café",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "node --watch index.js"
+  },
+  "keywords": [
+    "café",
+    "O'coffee"
+  ],
+  "author": "Elia Berthier",
+  "license": "ISC",
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "express-session": "^1.18.1",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.14.0"
+  }
+}

@@ -1,0 +1,33 @@
+<%- include('./partials/header') %>
+
+<title>Arôm'Coffee - Catalogue</title>
+
+<%- include('./partials/font-and-style') %>
+
+<%- include('./partials/nav') %>
+
+    <main class="container">
+        <section class="catalog">
+
+            <img src="../images/café-flou.png" alt="image café" class="catalog__image">
+            <h1 class="catalog__title">Notre Catalogue</h1>
+
+        </section>
+
+        <section class="all-products">
+            <% coffees.forEach(coffee => { %>
+              <article class="product">
+                  <img src="../images/<%= coffee.reference %>.png" alt="café <%= coffee.name %>" class="product__image">
+                  <h3 class="product__name"><%= coffee.name %></h3>
+                  <p class="product__description">
+                    <%= coffee.description %>
+                  </p>
+                  <a href="/produit/<%= coffee.id %>" class="product__link" aria-label="Lien vers le produit">Découvrir</a>
+                </article>
+              <% }) %>
+              
+        </section>
+
+    </main>
+
+    <%- include('./partials/footer') %>

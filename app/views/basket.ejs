@@ -1,0 +1,43 @@
+<%- include('./partials/header') %>
+
+<title>Arôm'Coffee - Panier</title>
+
+<%- include('./partials/font-and-style') %>
+
+<%- include('./partials/nav') %>
+
+<main class="container__basket">
+
+    <div class="cart-container">
+        <h1 class="cart-container__title">Votre Panier</h1>
+        <table class="cart-container__table">
+            <thead>
+                <tr>
+                    <th>Article</th>
+                    <th>Prix HT</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <% coffees.forEach(coffee => { %>
+                
+                <tr>
+                    <td>
+                        <div class="cart-container__product-info">
+                            <img class="cart-container__img" src="/images/<%= coffee.reference %>.png" alt="<%= coffee.name %>">
+                            <span class="cart-container__article-name"><%= coffee.name %></span>
+                        </div>
+                    </td>
+                    <td><%= coffee.price_per_kilo %> €</td>
+                    <td>
+                        <a href="/basket/remove/<%= coffee.id %>" class="delete-btn"><img src="../images/xmark-circle-solid.svg" alt="Bouton de supression"></ba>
+                    </td>
+                </tr>
+                
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+</main>
+
+<%- include('./partials/footer') %>
