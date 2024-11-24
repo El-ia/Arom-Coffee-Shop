@@ -21,7 +21,7 @@ export async function addProductToBasket(req, res){
       req.session.coffeeIds.push(coffeeId); 
     }
 
-    res.redirect("/basket");
+    res.redirect("/panier");
 
   } catch (error) {
     console.error(error);
@@ -36,7 +36,7 @@ export async function removeProductFromBasket(req, res){
     const coffeeIdToRemove = parseInt(req.params.id);
     req.session.coffeeIds = req.session.coffeeIds.filter(coffeeId => coffeeId !== coffeeIdToRemove);
 
-    res.redirect("/basket");
+    res.redirect("/panier");
     
   } catch (error) {
     console.error(error);

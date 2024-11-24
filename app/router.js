@@ -16,9 +16,9 @@ router.get('/produit/:id', mainController.renderProductPage);
 router.get('/boutique', mainController.renderAboutShopPage);
 
 
-router.get('/basket', basketController.basketPage);
-router.get('/basket/add/:id', basketController.addProductToBasket);
-router.get('/basket/remove/:id', basketController.removeProductFromBasket);
+router.get('/panier', basketController.basketPage);
+router.get('/panier/ajouter/:id', basketController.addProductToBasket);
+router.get('/retirer/:id', basketController.removeProductFromBasket);
 
 router.get('/catalogue/categorie', searchController.searchCategory);
 router.get('/catalogue/name', searchController.searchName);

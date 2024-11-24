@@ -23,7 +23,7 @@ body {
     align-items: center;
     gap: 2rem;
     padding: 2rem;
-    max-width: 1200px;
+    max-width: 75rem;
     margin: auto;
 }
 
@@ -37,7 +37,7 @@ body {
 }
 
 .welcome__image {
-    max-width: 350px;
+    max-width: 22rem;
 }
 
 .welcome__text {
@@ -133,8 +133,8 @@ body {
 }
 
 .product__image{
-    width: 250px; 
-    height: 250px; 
+    width: 15.6rem; 
+    height: 15.6rem; 
     object-fit: cover;
     margin: auto;
 }
@@ -173,15 +173,15 @@ body {
 
 #category {
     display: block;
-    margin: 20px auto;
-    padding: 10px;
-    font-size: 16px;
+    margin: 1.2rem auto;
+    padding: .6rem;
+    font-size: 1rem;
     color: #5D3021;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: .3rem;
     background-color: #9d663f30;
     cursor: pointer;
-    width: 200px;
+    width: 15%;
     transition: all 0.3s ease;
 }
 
@@ -196,14 +196,14 @@ body {
 }
 
 .submit-category {
-    margin: 10px auto;
+    margin: .6rem auto;
     display: block;
     background-color: #5D3021;
     color: #fff;
-    font-size: 16px;
-    padding: 10px 20px;
+    font-size: 1rem;
+    padding: .6rem 1.2rem;
     border: none;
-    border-radius: 5px;
+    border-radius: .3rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -369,11 +369,10 @@ strong {
 .cart-container__table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
 }
 th, td {
     border: 1px solid #2a221f65;
-    padding: 10px;
+    padding: .6rem;
     text-align: center;
     
 }
@@ -383,20 +382,20 @@ th {
 .cart-container__product-info {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: .6rem;
 }
 .cart-container__img{
-    width: 50px;
-    height: 50px;
+    width: 4rem;
+    height: 4rem;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: .3rem;
 }
 .delete-btn {
     
     color: white;
     border: none;
-    padding: 5px 10px;
+    padding: .3rem .6rem;
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: .2rem;
     background-color: #FFFFFD;
 }
