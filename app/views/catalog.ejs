@@ -11,7 +11,21 @@
 
             <img src="../images/café-flou.png" alt="image café" class="catalog__image">
             <h1 class="catalog__title">Notre Catalogue</h1>
+        </section>
 
+        <section class="category-filter">
+          <form action="/catalogue/categorie" method="get">
+            <select name="category" id="category">
+              <option value="all">Toutes</option>
+              <option value="Corsé">Corsé</option>
+              <option value="Acide">Acide</option>
+              <option value="Fruité">Fruité</option>
+              <option value="Doux">Doux</option>
+              <option value="Chocolaté">Chocolaté</option>
+              <option value="Épicé">Épicé</option>
+            </select>
+            <input class="submit-category" type="submit" value="Chercher">
+          </form>
         </section>
 
         <section class="all-products">
@@ -31,3 +45,6 @@
     </main>
 
     <%- include('./partials/footer') %>
+
+
+    

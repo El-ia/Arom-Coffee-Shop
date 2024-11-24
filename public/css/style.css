@@ -122,7 +122,7 @@ body {
 }
 
 
-/* catalogue page*/
+/* Catalog page */
 
 .all-products{
     margin-top: 2rem;
@@ -164,6 +164,53 @@ body {
     text-align: center; 
 }
 
+/* Category filter*/
+
+.category-filter{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+#category {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    color: #5D3021;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #9d663f30;
+    cursor: pointer;
+    width: 200px;
+    transition: all 0.3s ease;
+}
+
+#category:hover {
+    border-color: #5D3021;
+    background-color: #FFFFFD;
+}
+
+#category:focus {
+    outline: none;
+    border-color: #5D3021;
+}
+
+.submit-category {
+    margin: 10px auto;
+    display: block;
+    background-color: #5D3021;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-category:hover {
+    background-color: #301912;
+}
 
 /* Product page */
 
