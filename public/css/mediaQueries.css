@@ -3,11 +3,12 @@
     .header__logo {
         width: 3rem;
         height: 3rem;
+        margin-left: 2rem;
     }
 
     /* Header Navigation Items */
     .header__nav-item {
-        margin: 0 2rem;
+        margin: 0 
     }
 
     /* Catalog Title */
@@ -60,6 +61,14 @@
     .container__cta-link {
         font-size: 1rem;
     }
+
+    .container__map {
+        width: 60%;
+    }
+
+    #map {
+        height: 40vh;
+    }
 }
 
 @media (max-width: 768px) {
@@ -72,6 +81,7 @@
 
     .header__nav-list {
         flex-direction: column;
+        align-items: center;
         gap: 1rem;
     }
 
@@ -149,6 +159,15 @@
         font-size: 0.9rem;
         padding: 0.5rem 1rem;
     }
+
+    .container__map {
+        width: 80%;
+        margin-top: 3rem;
+    }
+
+    #map {
+        height: 30vh;
+    }
 }
 
 @media (max-width: 480px) {
@@ -193,6 +212,8 @@
         font-size: 1rem;
     }
 
+    
+
     /* Products */
     .product {
         width: 100%;
@@ -210,4 +231,18 @@
     .container__cta-link {
         font-size: 0.8rem;
     }
+
+        .container__map {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    #map {
+        height: 25vh;
+    }
+
+    .container__adresse {
+        font-size: 0.9rem;
+    }
 }
+

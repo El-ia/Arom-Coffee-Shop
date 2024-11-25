@@ -317,7 +317,7 @@ strong {
     padding-top: 10rem;
 }
 
-/* shop page */
+/* about page */
 
 .container__shop {
     width: 80%;
@@ -391,11 +391,14 @@ th {
     border-radius: .3rem;
 }
 .delete-btn {
-    
+    align-items: center;
     color: white;
     border: none;
     padding: .3rem .6rem;
     cursor: pointer;
     border-radius: .2rem;
     background-color: #FFFFFD;
+    display: flex;
+    justify-content: center;
 }
+
