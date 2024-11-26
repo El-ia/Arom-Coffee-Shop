@@ -10,6 +10,7 @@
 
     <div class="cart-container">
         <h1 class="cart-container__title">Votre Panier</h1>
+        <!-- Table displaying cart items -->
         <table class="cart-container__table">
             <thead>
                 <tr>
@@ -20,7 +21,7 @@
             </thead>
             <tbody>
                 <% coffees.forEach(coffee => { %>
-                
+                <!-- Coffee product row -->
                 <tr>
                     <td>
                         <div class="cart-container__product-info">
@@ -30,10 +31,10 @@
                     </td>
                     <td><%= coffee.price_per_kilo %> €</td>
                     <td>
+                        <!-- Remove item button -->
                         <a href="/panier/retirer/<%= coffee.id %>" class="delete-btn"><img src="../images/xmark-circle-solid.svg" alt="Bouton de supression"></ba>
                     </td>
                 </tr>
-                
                 <% }) %>
             </tbody>
         </table>

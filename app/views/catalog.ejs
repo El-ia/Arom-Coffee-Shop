@@ -7,12 +7,12 @@
 <%- include('./partials/nav') %>
 
     <main class="container">
+        <!-- Catalogue section -->
         <section class="catalog">
-
             <img src="../images/café-flou.png" alt="image café" class="catalog__image">
             <h1 class="catalog__title">Notre Catalogue</h1>
         </section>
-
+        <!-- Category filter section -->
         <section class="category-filter">
           <form action="/catalogue/categorie" method="get">
             <select name="category" id="category">
@@ -27,19 +27,19 @@
             <input class="submit-category" type="submit" value="Chercher">
           </form>
         </section>
-
+        <!-- All products section -->
         <section class="all-products">
-            <% coffees.forEach(coffee => { %>
-              <article class="product">
-                  <img src="../images/<%= coffee.reference %>.png" alt="café <%= coffee.name %>" class="product__image">
-                  <h3 class="product__name"><%= coffee.name %></h3>
-                  <p class="product__description">
-                    <%= coffee.description %>
-                  </p>
-                  <a href="/produit/<%= coffee.id %>" class="product__link" aria-label="Lien vers le produit">Découvrir</a>
-                </article>
-              <% }) %>
-              
+          <% coffees.forEach(coffee => { %>
+            <!-- Coffee product card -->
+            <article class="product">
+                <img src="../images/<%= coffee.reference %>.png" alt="café <%= coffee.name %>" class="product__image">
+                <h3 class="product__name"><%= coffee.name %></h3>
+                <p class="product__description">
+                  <%= coffee.description %>
+                </p>
+                 <a href="/produit/<%= coffee.id %>" class="product__link" aria-label="Lien vers le produit">Découvrir</a>
+            </article>
+          <% }) %>
         </section>
 
     </main>

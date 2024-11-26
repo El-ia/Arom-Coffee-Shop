@@ -7,39 +7,37 @@
 <%- include('./partials/nav') %>
 
     <main class="container">
+
+      <!-- Welcome section -->
       <h1 class="welcome__title"> Bienvenue chez Arôm'Coffee</h1>
       <section class="welcome__section">
         <div class="welcome__content">
+          <!-- Little about us section -->
           <h2 class="welcome__subtitle">Qui sommes-nous ?</h2>
           <p class="welcome__text">Jean et Jacques Pepper, deux frères passionnés par le café, sont les fondateurs de notre boutique. Avec une expertise approfondie et un amour profond pour cette délicieuse boisson, ils ont créé un espace où le café est célébré comme une expérience raffinée et inspirante.</p>
           <a href="/boutique" class="welcome__link" aria-label="En savoir plus sur la boutique">En savoir plus sur la boutique</a>
         </div>
+        <!-- About image -->
           <img src="../images/about.jpg" alt="Café dans une pelle" class="welcome__image">
       </section>
-
-      
-
+      <!-- New products section -->
       <section class="new-products">
         <h2 class="new-products__title">Nouveautés</h1>
         <div class="all__products">
           <div class="square__decoration"></div>
           <% coffees.forEach(coffee => { %>
-           
-          <article class="product">
-            <img src="../images/<%= coffee.reference %>.png" alt="café <%= coffee.name %>" class="product__image">
-            <h3 class="product__name"><%= coffee.name %></h3>
-            <p class="product__description">
-              <%= coffee.description %>
-            </p>
-            <a href="/catalogue" class="products__link" aria-label="Lien vers le catalogue">Catalogue</a>
-          </article>
-
-         <% }) %>
+             <!-- Coffee product card -->
+            <article class="product">
+              <img src="../images/<%= coffee.reference %>.png" alt="café <%= coffee.name %>" class="product__image">
+              <h3 class="product__name"><%= coffee.name %></h3>
+              <p class="product__description"><%= coffee.description %></p>
+              <a href="/catalogue" class="products__link" aria-label="Lien vers le catalogue">Catalogue</a>
+            </article>
+          <% }) %>
          <div class="square__decoration"></div>
         </div>
       </section>
 
-      
     </main>
 
 <%- include('./partials/footer') %>

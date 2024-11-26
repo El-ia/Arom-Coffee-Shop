@@ -1,9 +1,12 @@
+-- Begin the transaction
 BEGIN;
 
+-- Drop the "coffee" table if it exists
 DROP TABLE IF EXISTS "coffee";
 
+-- Create the "coffee" table with the specified columns
 CREATE TABLE IF NOT EXISTS "coffee" (
-  "id" SERIAL PRIMARY KEY,
+  "id" SERIAL PRIMARY KEY, 
   "name" TEXT,
   "description" TEXT,
   "reference" TEXT,
@@ -13,8 +16,10 @@ CREATE TABLE IF NOT EXISTS "coffee" (
   "available" BOOLEAN
 );
 
+-- Set the client encoding to UTF-8 for proper character handling
 SET client_encoding TO 'UTF8';
 
+-- Insert initial coffee data into the "coffee" table
 INSERT INTO "coffee"("id","name", "description", "reference", "origin", "price_per_kilo", "main_characteristic", "available") VALUES
 (1, 'Espresso', 'Café fort et concentré préparé en faisant passer de l''eau chaude à travers du café finement moulu.', '100955890', 'Italie', 20.99, 'Corsé', TRUE),
 (2, 'Columbian', 'Café moyennement corsé avec une acidité vive et une saveur riche.', '100955894', 'Colombie', 18.75, 'Acide', TRUE),
@@ -33,4 +38,5 @@ INSERT INTO "coffee"("id","name", "description", "reference", "origin", "price_p
 (15, 'Hawaiian Kona', 'Café rare au goût riche, une acidité douce et des nuances subtiles.', '958090105', 'Hawaï', 55.75, 'Doux', FALSE),
 (16, 'Nicaraguan Maragogipe', 'Café avec des notes de fruits, une acidité vive et un corps plein.', '691550753', 'Nicaragua', 28.60, 'Fruité', FALSE);
 
+-- Commit the transaction to apply changes
 COMMIT;

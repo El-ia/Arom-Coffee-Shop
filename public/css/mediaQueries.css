@@ -1,22 +1,23 @@
+
 @media (max-width: 1024px) {
-    /* Header Logo */
+
+    /* Header */
     .header__logo {
         width: 3rem;
         height: 3rem;
         margin-left: 2rem;
     }
 
-    /* Header Navigation Items */
     .header__nav-item {
         margin: 0 
     }
 
-    /* Catalog Title */
+    /* Catalog */
     .catalog__title {
         font-size: 4rem;
     }
 
-    /* Product and Decoration */
+    /* Home Page */
     .product {
         width: 15rem;
     }
@@ -53,7 +54,7 @@
         font-size: 1.8rem;
     }
 
-    .container__descrption, .container__details {
+    .container__description, .container__details {
         max-width: 90%;
         font-size: 1rem;
     }
@@ -62,6 +63,7 @@
         font-size: 1rem;
     }
 
+    /* About shop page */
     .container__map {
         width: 60%;
     }
@@ -72,6 +74,7 @@
 }
 
 @media (max-width: 768px) {
+
     /* Header */
     .header {
         flex-direction: column;
@@ -106,7 +109,7 @@
         padding: 0.5rem;
     }
 
-    /* Products */
+    /* Home page */
     .all__products {
         display: flex;
         flex-direction: column;
@@ -144,15 +147,9 @@
         width: fit-content;
     }
 
-    /* Welcome and Titles */
     .welcome__title,
     .new-products__title {
         font-size: 2rem;
-    }
-
-    /* Container Product CTA */
-    .container__product {
-        padding: 1rem;
     }
 
     .container__cta-link {
@@ -160,6 +157,12 @@
         padding: 0.5rem 1rem;
     }
 
+   /* Product page */
+    .container__product {
+        padding: 1rem;
+    }
+
+    /* About shop page */
     .container__map {
         width: 80%;
         margin-top: 3rem;
@@ -171,6 +174,7 @@
 }
 
 @media (max-width: 480px) {
+
     /* Body */
     body {
         padding: 0.5rem;
@@ -187,7 +191,7 @@
         font-size: 1.5rem;
     }
 
-    /* Text */
+    /* Product page*/
     .product__name {
         font-size: 1rem;
     }
@@ -196,7 +200,7 @@
         font-size: 0.8rem;
     }
 
-    .container__descrption {
+    .container__description {
         font-size: 0.9rem;
     }
 
@@ -213,7 +217,7 @@
     }
 
     
-    /* Products */
+    /* Home page */
     .product {
         width: 100%;
     }
@@ -231,10 +235,13 @@
         font-size: 0.8rem;
     }
 
-        .container__map {
+    /* About shop page */
+    .container__map {
         width: 100%;
         padding: 1rem;
     }
+
+    /* About shop page */
 
     #map {
         height: 25vh;

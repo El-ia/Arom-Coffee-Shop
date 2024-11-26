@@ -7,13 +7,16 @@
 <%- include('./partials/nav') %>
 
     <main class="container">
+
         <section class="container__header">
             <div class="container__product">
+                <!-- Product image -->
                 <img src="../images/<%= coffee.reference %>.png" alt="Café <%= coffee.name %>" class="container__image">
+                <!-- Product name -->
                 <h1 class="container__title"><%= coffee.name %></h1>
-                <p class="container__description">
-                    <%= coffee.description %>
-                </p>
+                <!-- Product description -->
+                <p class="container__description"><%= coffee.description %></p>
+                <!-- Product details -->
                 <div class="container__details">
                     <h2 class="container__subtitle">Détails du produit</h2>
                     <ul class="container__info-list">
@@ -23,16 +26,20 @@
                         <li><strong>Disponibilité :</strong> <%= coffee.available ? '✅' : '❌' %></li>
                     </ul>
                 </div>
+                <!-- Add to basket button -->
                 <button class="container__add-basket">
-                    <a href="/panier/ajouter/<%= coffee.id %>"><img src="../images/cart-plus.svg" alt="Icone ajouter au panier" class="container__icone-basket"></a>
+                    <a href="/panier/ajouter/<%= coffee.id %>">
+                        <img src="../images/cart-plus.svg" alt="Icone ajouter au panier" class="container__icone-basket">
+                    </a>
                 </button>
-                
             </div>
             <div class="container__cta">
+                <!-- Call to action to explore more products -->
                 <p class="container__cta-text">Voulez-vous découvir plus de café exceptionnel ? Découvrez notre catalogue pour plus de produits de qualité.</p>
                 <a href="/catalogue" class="container__cta-link" aria-label="Retour au catalogue">Retour au Catalogue</a>
             </div>
         </section>
+
     </main>
 
 
