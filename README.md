@@ -1,6 +1,12 @@
 # Site E-commerce de café, Arôm'Coffee
 
-Ce projet est une application de commerce en ligne utilisant Node.js, Express, et un modèle DataMapper pour gérer les interactions avec la base de données.
+Arôm'Coffee est une application de commerce en ligne dédiée aux passionnés de café. Conçue pour offrir une expérience utilisateur simple et agréable, cette plateforme permet aux utilisateurs d'explorer une large sélection de cafés, d'ajouter des produits à leur panier et de finaliser leurs achats. 
+
+Développée avec **Node.js** et **Express.js**, l'application repose sur une architecture serveur robuste et flexible, utilisant **EJS** pour rendre dynamiquement les pages HTML. L'application gère également les sessions utilisateur grâce à la gestion des cookies, tout en interagissant avec une base de données **PostgreSQL** pour le stockage sécurisé des produits et des informations de commande.
+
+Le projet met en œuvre une structure **DataMapper** pour séparer la logique métier des interactions avec la base de données, assurant ainsi une maintenance facile et un code propre. 
+
+Arôm'Coffee vise à fournir une plateforme moderne, fiable et sécurisée pour les amateurs de café souhaitant acheter leurs produits préférés en ligne.
 
 ## Table des matières
 
@@ -20,7 +26,7 @@ Ce projet est une application de commerce en ligne utilisant Node.js, Express, e
 - **Express.js** : Pour gérer les requêtes HTTP et la logique serveur.
 - **EJS** : Pour le rendu des vues HTML.
 - **Session** : Pour gérer les sessions utilisateur.
-- **Postgres** : Pour la gestion des données et les interactions avec la base de données.
+- **PostgreSQL** : Pour la gestion des données et les interactions avec la base de données.
 
 ---
 
@@ -42,7 +48,7 @@ Ce projet est une application de commerce en ligne utilisant Node.js, Express, e
         - Utilisateur : `ocoffee`
         - Mot de passe : `ocoffee`
         - Base de données : `ocoffee`
-    - Insérez ensuite le fichier `coffee_db_sql` pour créer la structure de la base.
+    - Insérez ensuite le fichier `cofee_db_sql` pour créer la structure de la base.
 
 4. Lancez le serveur :
     ```bash
@@ -87,7 +93,7 @@ Voici une vue d’ensemble de la structure des dossiers et fichiers appartenant 
   ├── router.js                             # Définition des routes
   │
 /DB                                         # Fichiers liés à la base de données
-  └── coffe_db.sql                          # Script SQL pour la base
+  └── cofee_db.sql                          # Script SQL pour la base
 │
 /node_modules                               # Modules npm
 │
@@ -150,8 +156,8 @@ Voici une vue d’ensemble de la structure des dossiers et fichiers appartenant 
 
 ### Améliorations possibles
 
-- **Amélioration de l'authentification** : Fonctionnement de la page d'authentification (manque d'expérience).
-- **Mise à jour des quantités** : Gestion dynamique des quantités dans le panier (manque d'expérience).
-- **Calcul dynamique du total** : Affichage du total en temps réel (manque d'expérience).
-- **Passation de commande** : Validation du panier et enregistrement de la commande (manque d'expérience).
+- **Amélioration de l'authentification** : Fonctionnement de la page d'authentification, inscription et login (manque de temps/expérience).
+- **Mise à jour des quantités** : Gestion dynamique des quantités dans le panier (manque de temps/expérience).
+- **Calcul dynamique du total** : Affichage du total en temps réel (manque de temps/expérience).
+- **Passation de commande** : Validation du panier et enregistrement de la commande (manque de temps/expérience).
 - **Ajout de JavaScript côté front** : Pour améliorer l'interactivité du site.
