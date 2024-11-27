@@ -55,6 +55,7 @@ Le serveur devrait maintenant être accessible sur [http://localhost:3000](http:
 
 Voici une vue d’ensemble de la structure des dossiers et fichiers appartenant au projet :
 
+```plaintext
 /app                                        # Dossier principal contenant l'application backend
   ├── /controllers                          # Fichiers contrôleurs (logique métier)
   │     ├── authController.js               # Gestion de l'authentification
