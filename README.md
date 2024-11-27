@@ -109,7 +109,7 @@ Voici une vue d’ensemble de la structure des dossiers et fichiers appartenant 
 /package.json                               # Dépendances du projet
 /package-lock.json                          # Verrouillage des versions des dépendances
 /README.md                                  # Documentation du projet
-
+```
 
 ### Fonctionnalités
 
