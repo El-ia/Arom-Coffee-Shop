@@ -44,4 +44,5 @@ router.get('/catalogue/categorie', searchController.searchCategory);
 // Route to search products by name
 router.get('/catalogue/name', searchController.searchName);
 
+// Route to login and sing-up
 router.get('/login', authController.loginPage);
