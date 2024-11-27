@@ -6,6 +6,7 @@ import { Router } from "express";
 import * as mainController from "./controllers/mainController.js";
 import * as basketController from "./controllers/basketController.js";
 import * as searchController from "./controllers/searchController.js";
+import * as authController from "./controllers/authController.js";
 
 // Creating a new instance of the Router
 export const router = Router();
@@ -42,3 +43,5 @@ router.get('/catalogue/categorie', searchController.searchCategory);
 
 // Route to search products by name
 router.get('/catalogue/name', searchController.searchName);
+
+router.get('/login', authController.loginPage);

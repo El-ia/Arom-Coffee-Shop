@@ -414,3 +414,61 @@ th {
     justify-content: center;
 }
 
+
+/* Auth Page */
+
+.auth-container {
+    background-color: var(--neutral-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100vh;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.auth-form {
+    width: 40%;
+    height: 60%;
+    background-color: #a0653e4e ;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.auth-form h1 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.auth-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.auth-button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--secondary-bg);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.auth-button:hover {
+    background-color: #2A221F;
+}

@@ -52,7 +52,7 @@
     text-decoration: none;
 }
 
-/* Search bar */
+/* Search bar*/
 
 .header__search-form {
     display: flex;
@@ -86,6 +86,7 @@
     width: 20px;
     fill: #333;
 }
+
 
 /* footer */
 
